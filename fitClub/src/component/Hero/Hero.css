@@ -154,7 +154,7 @@
 .calories>div>:nth-child(1){
     color:var(--gray);
 }
-.calories>div>:nth-child(){
+.calories>div>:nth-child(2){
     color:white;
     font-size: 1.5rem;
 }

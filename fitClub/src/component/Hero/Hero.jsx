@@ -64,8 +64,7 @@ function Hero() {
         <div className="calories">
             <img src={Calories} alt="" />
             <div>
-                            <span>Calories Burnd</span><span>220kcal</span>
-
+               <span>Calories Burned</span><span>220kcal</span>
             </div>
         </div>
        </div>
