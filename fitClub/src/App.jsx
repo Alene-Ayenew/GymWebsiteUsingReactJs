@@ -6,6 +6,7 @@ import Programs from './component/programs/Programs'
 import Reasons from './component/Reasons/Reasons'
 import Plans from './component/plans/Plans'
 import Testimonials from './component/Testimonials/Testimonials'
+import Join from './component/Join/Join'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
         <Reasons/>
         <Plans/>
         <Testimonials/>
+        <Join/>
       </div>
     </>
   )
