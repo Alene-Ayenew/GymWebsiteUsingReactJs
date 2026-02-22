@@ -8,17 +8,18 @@ import Header from '../Header/Header'
 import {motion} from 'framer-motion'
 function Hero() {
   const transition ={type:'spring',duration:3}
+  const mobile=window.innerWidth <= 768 ? true :false;
   return (
-    <div className="hero">
+    <div className="hero" id='home'>
       <div className="blur hero-blur">
-
+console.log(NumberCounter);
       </div>
        <div className="left-h">
       <Header/>
       {/* the best ad */}
       <div className="the-best-ad">
         <motion.div
-            initial={{ left: '238px' }}
+            initial={{ left: mobile ? '165px': '238px' }}
             whileInView={{ left: '8px' }}
             transition={{ ...transition, type: 'tween' }}
         ></motion.div>
@@ -39,7 +40,9 @@ function Hero() {
        {/* figures */}
        <div className="figures">
         <div>
-             <span>+140</span>
+             <span>
+            <span>+140</span>
+             </span>
              <span>expert coachs</span>
         </div>
         <div>
@@ -53,8 +56,8 @@ function Hero() {
        </div>
        {/* hero buttons  */}
        <div className="hero-buttons">
-        <buttons className="btn">Get Started</buttons>
-        <buttons className="btn">Learn More</buttons>
+        <button className="btn">Get Started</button>
+        <button className="btn">Learn More</button>
        </div>
        </div>
        <div className="right-h">
